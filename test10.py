@@ -28,4 +28,4 @@ input_csv = '../Data/transactions_dataFD.csv'
 comparison_csv = '../Data/transactions_dataFA.csv'
 output_csv = '../Data/transactions_dataND.csv'
 
-add_matching_row(input_csv, comparison_csv, output_csv)
+add_matching_player_row(input_csv, comparison_csv, output_csv)
