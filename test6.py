@@ -66,7 +66,7 @@ def remove_accents(input_str):
 
 def getPlayerData(id, start, end, num):
     # Set up Chrome options to specify download directory
-    download_dir = r'C:\Users\Blake\IdeaProjects\Research\.idea'  # Replace with your desired folder (Windows example)
+    download_dir = r'/Data'  # Replace with your desired folder (Windows example)
 
     # Set up the Chrome Options object
     chrome_options = Options()
@@ -170,8 +170,8 @@ def player(readerfile,writerfile):
                     date_obj = datetime.strptime(end, "%Y-%m-%d").date()
                     start = date_obj - relativedelta(years=2)
             if (getPlayerData(id,start,end,num) != 1):
-                most_recent_file = get_most_recent_file(r'C:\Users\Blake\IdeaProjects\Research\.idea', file_extension='.csv')
-                most_recent_file_path = os.path.join(r'C:\Users\Blake\IdeaProjects\Research\.idea', most_recent_file)
+                most_recent_file = get_most_recent_file(r'/Data', file_extension='.csv')
+                most_recent_file_path = os.path.join(r'/Data', most_recent_file)
                 append_row_to_csv(most_recent_file_path, writerfile)
             else:
                 emptyrow(writerfile)

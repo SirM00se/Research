@@ -19,8 +19,8 @@ def append_csv_files(folder_path, target_file):
             print(f'Appended data from {filename}')
 
 # Define the folder containing the CSV files and the target CSV file
-folder_path = r'C:\Users\Blake\IdeaProjects\Research\.idea\people'  # replace with your folder path
-target_file = r'C:\Users\Blake\IdeaProjects\Research\.idea\people.csv'  # replace with the path to your target CSV
+folder_path = r'C:\Users\Blake\IdeaProjects\Research\Data\people'  # replace with your folder path
+target_file = r'C:\Users\Blake\IdeaProjects\Research\Data\people.csv'  # replace with the path to your target CSV
 
 # Call the function to append CSV files into the target CSV
 append_csv_files(folder_path, target_file)

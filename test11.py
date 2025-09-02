@@ -5,7 +5,7 @@ column_names = ['date', 'team', 'name', 'notes']
 
 # Read the comparison and input CSV files without headers (header=None)
 comparison_df = pd.read_csv('onWrist.csv', header=None, names=column_names)
-input_df = pd.read_csv('../.idea/transactions_dataNA.csv', header=None, names=column_names)
+input_df = pd.read_csv('../Data/transactions_dataNA.csv', header=None, names=column_names)
 
 # Strip any leading or trailing spaces from column names
 comparison_df.columns = comparison_df.columns.str.strip()

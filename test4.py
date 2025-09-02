@@ -1,7 +1,7 @@
 import csv
-file = open('../.idea/transactions_data3.csv', 'r')
-file2 = open('../.idea/transactions_dataD.csv', 'w')
-file3 = open('../.idea/transactions_dataA.csv', 'w')
+file = open('../Data/transactions_data3.csv', 'r')
+file2 = open('../Data/transactions_dataD.csv', 'w')
+file3 = open('../Data/transactions_dataA.csv', 'w')
 for line in file:
     if "activated" in line:
         file3.write(line)

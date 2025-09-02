@@ -24,8 +24,8 @@ def add_matching_player_row(input_csv, comparison_csv, output_csv, player_column
                     output_writer.writerow(row)
 
 # Example usage
-input_csv = 'transactions_dataFD.csv'
-comparison_csv = 'transactions_dataFA.csv'
-output_csv = 'transactions_dataND.csv'
+input_csv = '../Data/transactions_dataFD.csv'
+comparison_csv = '../Data/transactions_dataFA.csv'
+output_csv = '../Data/transactions_dataND.csv'
 
 add_matching_row(input_csv, comparison_csv, output_csv)

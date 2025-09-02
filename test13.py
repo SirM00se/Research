@@ -5,7 +5,7 @@ numwOBA = 0
 rows = []
 
 # Open the CSV file for reading and writing
-with open('befShould2.csv', 'r') as file:
+with open('../Data/befShould2.csv', 'r') as file:
     reader = csv.reader(file)
 
     # Skip the header row
